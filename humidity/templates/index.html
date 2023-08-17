@@ -1,0 +1,63 @@
+{% load static %}
+<html>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<div class="white">
+
+</div>
+<div class="black">
+    <h1>
+        {% for a in data %}
+        {{a.city_name}}
+        {% endfor %}
+    </h1>
+    <h2>
+        {% for a in data %}
+        {{a.temp}}°C
+        {% endfor %}
+    </h2>
+</div>
+<div class="green">
+<h1>
+    {% for a in data %}
+    {{a.datetime}}
+    {% endfor %}
+</h1>
+</div>
+<div class="textbox">
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter city name" style="height: 40px; width: 400px;" name="city">
+        <button type="submit" style="margin-left: 420px; margin-top: -40px; height: 40px; width: 100px;">Search</button>
+    </form>
+</div>
+<div class="sunset">
+    {% for a in data %}
+    <h2>{{a.sunset}}</h2>
+    <h2>sunset</h2>
+    
+    {% endfor %}
+
+</div>
+
+<div class="Humidity">
+    {% for a in data %}
+    <h2>{{a.rh}}</h2>
+    <h2>Humidity</h2>
+    {% endfor %}
+
+</div>
+<div class="pressure">
+    {% for a in data %}
+    <h2>{{a.slp}}</h2>
+    <h2>Pressure</h2>
+    {% endfor %}
+
+</div>
+<div class="Windspeed">
+    {% for a in data %}
+    <h2>{{a.wind_spd}}</h2>
+    <h2>Wind speed</h2>      
+    {% endfor %}
+</div>
+
+</html>

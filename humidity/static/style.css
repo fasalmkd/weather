@@ -1,0 +1,83 @@
+body
+    {
+        background-color: grey;
+    }
+.white
+{
+    background-color: rgb(251, 251, 251);
+    width: 650;
+    height: 450;
+    margin-left: 310;
+    margin-top: 100;
+    border-radius: 20px;
+    
+}
+.black
+{
+    background-color: slategrey;
+    width: 450;
+    height: 150;
+    margin-top: -300;
+    margin-left: 310;
+    color: rgb(255, 255, 255);
+    font-size:17px;
+    font-style: oblique;
+}
+.black > h2
+{
+    font-size: 80px;
+    margin-left: 150px;
+    margin-top: 10px;
+    font-style: oblique;
+}
+.green
+{
+    background-color:mediumslateblue;
+    width: 250;
+    height: 150;
+    margin-top: -172px;
+    margin-left: 710px;
+    font-size: 16px;
+    color: azure;
+}
+.green > h1
+{
+    font-size: 30px;
+    padding-top: 60px;
+    margin-left: 30px;
+}
+
+.textbox
+{
+    
+    height: 30;
+    width: 400;
+    margin-left: 430;
+    margin-top: -380;
+    border-radius: 5px;
+}
+.textbox
+{
+    padding: 16;
+    font-size: 18px;
+}
+.sunset
+{
+    margin-left: 350px;
+    margin-top: 350px;
+}
+.Humidity
+{
+    margin-left: 480px;
+    margin-top: -90px;
+}
+.Pressure
+{
+    margin-left: 630px;
+    margin-top: -90px;
+}
+.Windspeed
+{
+    margin-left: 770px;
+    margin-top:  -95px;
+}
